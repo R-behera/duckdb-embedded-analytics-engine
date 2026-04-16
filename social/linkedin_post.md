@@ -1,19 +1,16 @@
-Today I shipped **DuckDB Embedded Analytics Engine**, a research-backed Embedded Analytics project inspired by **DuckDB: an Embeddable Analytical Database**.
+Shipped **Finance Close Anomaly Investigator** today.
 
-        What I changed from the base research or repo:
-        1. Translate upstream embedded analytics logic into stakeholder-ready dashboards, memos, and scenario controls.
-2. Add reproducible docs, deployment-ready structure, and polished collateral for GitHub and LinkedIn.
-3. Make the core decisions easier to interpret for product, finance, and operations partners.
+This one is built around a real workflow for **Controllers and finance operations teams**.
 
-I also reviewed the upstream repo and focused on gaps like: No dedicated docs directory detected for architecture or operations guidance.
+Problem:
+Month-end close issues often surface too late because account movements and reconciliation anomalies are scattered across tools.
 
-        Why it matters:
-        - easier to demo
-        - easier to operate
-        - easier to explain to product, analytics, and engineering teams
+What it helps decide:
+Find and explain unusual close movements before books are finalized.
 
-        Repo: https://github.com/R-behera/duckdb-embedded-analytics-engine
-        Paper: https://arxiv.org/abs/2201.07424
-        Screenshot: demo/screenshot.png
+Why that matters:
+Shorten close cycle time and reduce late manual adjustments.
 
-        #duckdb #analytics #sql #dataengineering #AI #MachineLearning #LLM #DataScience
+Repo: https://github.com/R-behera/duckdb-embedded-analytics-engine
+
+#finance #anomaly #analytics #close #AI #MachineLearning #DataScience

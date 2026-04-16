@@ -4,109 +4,103 @@
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>DuckDB Embedded Analytics Engine</title>
+          <title>Finance Close Anomaly Investigator</title>
           <link rel="stylesheet" href="./styles.css">
         </head>
         <body class="surface-paper">
           <div class="page layout-horizon eyebrow-solid headline-compact modules-3 hero-align-left">
             <section class="hero">
               <div class="panel hero-copy">
-                <span class="eyebrow" data-health>Analytics Studio</span>
-                <h1 id="project-title">DuckDB Embedded Analytics Engine</h1>
-                <p id="project-summary" class="lead">Build an embedded analytics engine for portable BI, offline-first dashboards, and analyst workflows that ship with the app.</p>
+                <span class="eyebrow" data-health>Signal Watchtower</span>
+                <h1 id="project-title">Finance Close Anomaly Investigator</h1>
+                <p id="project-summary" class="lead">Investigate unusual account movements, close-time anomalies, and reconciliation risk inside an embedded finance analytics app.</p>
                 <ul id="project-tags" class="tag-list">
-                  <li>duckdb</li><li>analytics</li><li>sql</li><li>data-engineering</li>
+                  <li>finance</li><li>anomaly</li><li>analytics</li><li>close</li>
                 </ul>
               </div>
               <div class="panel hero-side">
                 <div class="metric-grid">
-                  <article class='card'><span>North Star</span><strong>77</strong><em>+7.1%</em></article>
-<article class='card'><span>Variance</span><strong>15%</strong><em>-1.8%</em></article>
-<article class='card'><span>Decision Cycle</span><strong>3d</strong><em>-0.5d</em></article>
+                  <article class='card'><span>Anomaly Precision</span><strong>88%</strong><em>+6.0%</em></article>
+<article class='card'><span>Close Cycle</span><strong>5.1d</strong><em>-1.2d</em></article>
+<article class='card'><span>Late Adjustments</span><strong>9%</strong><em>-2.1%</em></article>
                 </div>
                 <div class="mini-grid">
-                  <article class='mini-card'><span>Project Type</span><strong>ANALYTICS</strong></article><article class='mini-card'><span>Domain</span><strong>Embedded Analytics</strong></article><article class='mini-card'><span>Application</span><strong>Analytics Studio</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                  <article class='mini-card'><span>Project Type</span><strong>ANALYTICS</strong></article><article class='mini-card'><span>Domain</span><strong>Finance Operations Analytics</strong></article><article class='mini-card'><span>Application</span><strong>Signal Watchtower</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
                 </div>
               </div>
             </section>
             <section class="app-grid">
               <article class="panel module js-module span-normal">
           <div class="module-header">
-            <span>Studio 01</span>
-            <h2>Opportunity Scorecard</h2>
-            <p>Score the current opportunity shape before deciding what to prioritize next.</p>
+            <span>Close 01</span>
+            <h2>Journal Risk Score</h2>
+            <p>Score the current close packet for material anomaly risk.</p>
           </div>
           <textarea class="js-input">{
   &quot;features&quot;: {
-    &quot;current_conversion&quot;: 0.16,
-    &quot;baseline_conversion&quot;: 0.12,
-    &quot;volume&quot;: 3425,
-    &quot;segment&quot;: &quot;paid_users&quot;
+    &quot;business_unit&quot;: &quot;North America&quot;,
+    &quot;materiality_band&quot;: &quot;high&quot;,
+    &quot;journal_spike&quot;: 0.28,
+    &quot;recon_breaks&quot;: 17
   }
 }</textarea>
           <div class="button-row">
-            <button class="js-run" data-endpoint="/score" data-input-mode="json">Score Opportunity</button>
+            <button class="js-run" data-endpoint="/score" data-input-mode="json">Score Close</button>
           </div>
-          <pre class="js-output">Opportunity score and top factors will appear here.</pre>
+          <pre class="js-output">Close risk score appears here.</pre>
         </article>
 <article class="panel module js-module span-wide">
           <div class="module-header">
-            <span>Studio 02</span>
-            <h2>Metric Storyline</h2>
-            <p>Translate KPI movement into a concise summary for product, growth, or finance stakeholders.</p>
+            <span>Close 02</span>
+            <h2>Variance Review</h2>
+            <p>Compare this month's close risk signals against the prior month baseline.</p>
           </div>
           <textarea class="js-input">{
   &quot;metrics&quot;: {
-    &quot;acquisition&quot;: 82.9,
-    &quot;activation&quot;: 70.5,
-    &quot;retention&quot;: 76.8,
-    &quot;revenue&quot;: 139.3
+    &quot;anomaly_precision&quot;: 88.0,
+    &quot;close_cycle_days&quot;: 5.1,
+    &quot;late_adjustments_pct&quot;: 9.0
   },
   &quot;baseline&quot;: {
-    &quot;acquisition&quot;: 76.27,
-    &quot;activation&quot;: 64.86,
-    &quot;retention&quot;: 70.66,
-    &quot;revenue&quot;: 128.16
+    &quot;anomaly_precision&quot;: 82.0,
+    &quot;close_cycle_days&quot;: 6.3,
+    &quot;late_adjustments_pct&quot;: 11.1
   }
 }</textarea>
           <div class="button-row">
-            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Summarize Metrics</button>
+            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Review Variance</button>
           </div>
-          <pre class="js-output">Metric storyline summary will appear here.</pre>
+          <pre class="js-output">Close variance appears here.</pre>
         </article>
 <article class="panel module js-module span-normal">
           <div class="module-header">
-            <span>Studio 03</span>
-            <h2>Decision Memo</h2>
-            <p>Generate the next action memo grounded in the project-specific context.</p>
+            <span>Close 03</span>
+            <h2>Controller Brief</h2>
+            <p>Draft the close-risk note for the controller review meeting.</p>
           </div>
           <textarea class="js-input">{
-  &quot;prompt&quot;: &quot;Recommend the next best action for DuckDB Embedded Analytics Engine.&quot;,
+  &quot;prompt&quot;: &quot;Write the controller brief for month-end anomaly review.&quot;,
   &quot;features&quot;: {
-    &quot;current_conversion&quot;: 0.16,
-    &quot;baseline_conversion&quot;: 0.12,
-    &quot;volume&quot;: 3425,
-    &quot;segment&quot;: &quot;paid_users&quot;
+    &quot;business_unit&quot;: &quot;North America&quot;,
+    &quot;late_adjustments&quot;: true
   },
   &quot;metrics&quot;: {
-    &quot;acquisition&quot;: 82.9,
-    &quot;activation&quot;: 70.5,
-    &quot;retention&quot;: 76.8,
-    &quot;revenue&quot;: 139.3
+    &quot;close_cycle_days&quot;: 5.1,
+    &quot;late_adjustments_pct&quot;: 0.09
   }
 }</textarea>
           <div class="button-row">
-            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Memo</button>
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Brief</button>
           </div>
-          <pre class="js-output">Decision memo will appear here.</pre>
+          <pre class="js-output">Controller brief appears here.</pre>
         </article>
             </section>
             <footer class="footer">
-              <span>Embedded Analytics • ANALYTICS • Analytics Studio</span>
+              <span>Finance Operations Analytics • ANALYTICS • Signal Watchtower</span>
               <span>duckdb-embedded-analytics-engine</span>
             </footer>
           </div>
-          <script id="bootstrap-data" type="application/json">{"project": {"slug": "duckdb-embedded-analytics-engine", "title": "DuckDB Embedded Analytics Engine", "project_type": "analytics", "domain": "Embedded Analytics", "summary": "Build an embedded analytics engine for portable BI, offline-first dashboards, and analyst workflows that ship with the app.", "tags": ["duckdb", "analytics", "sql", "data-engineering"]}, "app_archetype": "studio", "ui_profile": {"layout": "horizon", "surface": "paper", "font_stack": "\"IBM Plex Sans\", \"Segoe UI\", sans-serif", "radius": 24, "shadow": 56, "eyebrow_style": "solid", "module_columns": 3, "hero_align": "left", "headline_mode": "compact"}, "app_modules": [{"label": "Studio 01", "title": "Opportunity Scorecard", "description": "Score the current opportunity shape before deciding what to prioritize next.", "endpoint": "/score", "input_mode": "json", "cta": "Score Opportunity", "prefill": "{\n  \"features\": {\n    \"current_conversion\": 0.16,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 3425,\n    \"segment\": \"paid_users\"\n  }\n}", "hint": "Opportunity score and top factors will appear here.", "span": "normal"}, {"label": "Studio 02", "title": "Metric Storyline", "description": "Translate KPI movement into a concise summary for product, growth, or finance stakeholders.", "endpoint": "/analyze", "input_mode": "json", "cta": "Summarize Metrics", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 82.9,\n    \"activation\": 70.5,\n    \"retention\": 76.8,\n    \"revenue\": 139.3\n  },\n  \"baseline\": {\n    \"acquisition\": 76.27,\n    \"activation\": 64.86,\n    \"retention\": 70.66,\n    \"revenue\": 128.16\n  }\n}", "hint": "Metric storyline summary will appear here.", "span": "wide"}, {"label": "Studio 03", "title": "Decision Memo", "description": "Generate the next action memo grounded in the project-specific context.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Memo", "prefill": "{\n  \"prompt\": \"Recommend the next best action for DuckDB Embedded Analytics Engine.\",\n  \"features\": {\n    \"current_conversion\": 0.16,\n    \"baseline_conversion\": 0.12,\n    \"volume\": 3425,\n    \"segment\": \"paid_users\"\n  },\n  \"metrics\": {\n    \"acquisition\": 82.9,\n    \"activation\": 70.5,\n    \"retention\": 76.8,\n    \"revenue\": 139.3\n  }\n}", "hint": "Decision memo will appear here.", "span": "normal"}], "sample_features": {"current_conversion": 0.16, "baseline_conversion": 0.12, "volume": 3425, "segment": "paid_users"}, "sample_metrics": {"acquisition": 82.9, "activation": 70.5, "retention": 76.8, "revenue": 139.3}, "knowledge_base": ["DuckDB Embedded Analytics Engine is positioned as a Embedded Analytics starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Build an embedded analytics engine for portable BI, offline-first dashboards, and analyst workflows that ship with the app.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on duckdb, analytics, sql, data-engineering.", "Source paper: DuckDB: an Embeddable Analytical Database", "Official repo: https://github.com/duckdb/duckdb", "Production differentiation focus: Translate upstream embedded analytics logic into stakeholder-ready dashboards, memos, and scenario controls.; Add reproducible docs, deployment-ready structure, and polished collateral for GitHub and LinkedIn.; Make the core decisions easier to interpret for product, finance, and operations partners."], "dashboard_metrics": [{"label": "North Star", "value": "77", "delta": "+7.1%"}, {"label": "Variance", "value": "15%", "delta": "-1.8%"}, {"label": "Decision Cycle", "value": "3d", "delta": "-0.5d"}]}</script>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "duckdb-embedded-analytics-engine", "title": "Finance Close Anomaly Investigator", "project_type": "analytics", "domain": "Finance Operations Analytics", "summary": "Investigate unusual account movements, close-time anomalies, and reconciliation risk inside an embedded finance analytics app.", "tags": ["finance", "anomaly", "analytics", "close"]}, "app_archetype": "watchtower", "ui_profile": {"layout": "horizon", "surface": "paper", "font_stack": "\"IBM Plex Sans\", \"Segoe UI\", sans-serif", "radius": 24, "shadow": 56, "eyebrow_style": "solid", "module_columns": 3, "hero_align": "left", "headline_mode": "compact"}, "app_modules": [{"label": "Close 01", "title": "Journal Risk Score", "description": "Score the current close packet for material anomaly risk.", "endpoint": "/score", "input_mode": "json", "cta": "Score Close", "prefill": "{\n  \"features\": {\n    \"business_unit\": \"North America\",\n    \"materiality_band\": \"high\",\n    \"journal_spike\": 0.28,\n    \"recon_breaks\": 17\n  }\n}", "hint": "Close risk score appears here.", "span": "normal"}, {"label": "Close 02", "title": "Variance Review", "description": "Compare this month's close risk signals against the prior month baseline.", "endpoint": "/analyze", "input_mode": "json", "cta": "Review Variance", "prefill": "{\n  \"metrics\": {\n    \"anomaly_precision\": 88.0,\n    \"close_cycle_days\": 5.1,\n    \"late_adjustments_pct\": 9.0\n  },\n  \"baseline\": {\n    \"anomaly_precision\": 82.0,\n    \"close_cycle_days\": 6.3,\n    \"late_adjustments_pct\": 11.1\n  }\n}", "hint": "Close variance appears here.", "span": "wide"}, {"label": "Close 03", "title": "Controller Brief", "description": "Draft the close-risk note for the controller review meeting.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Brief", "prefill": "{\n  \"prompt\": \"Write the controller brief for month-end anomaly review.\",\n  \"features\": {\n    \"business_unit\": \"North America\",\n    \"late_adjustments\": true\n  },\n  \"metrics\": {\n    \"close_cycle_days\": 5.1,\n    \"late_adjustments_pct\": 0.09\n  }\n}", "hint": "Controller brief appears here.", "span": "normal"}], "sample_features": {"business_unit": "North America", "materiality_band": "high", "journal_spike": 0.28, "recon_breaks": 17, "late_adjustments": true}, "sample_metrics": {"anomaly_precision": 0.88, "close_cycle_days": 5.1, "late_adjustments_pct": 0.09, "recon_issue_resolution_hours": 11.0}, "knowledge_base": ["User: controller and finance operations teams during close.", "Primary pain: finance anomalies are found late and require manual detective work across many systems.", "Decision output: prioritize journals, reconciliations, and business units for review.", "Business impact: shorter close cycles and fewer late adjustments."], "dashboard_metrics": [{"label": "Anomaly Precision", "value": "88%", "delta": "+6.0%"}, {"label": "Close Cycle", "value": "5.1d", "delta": "-1.2d"}, {"label": "Late Adjustments", "value": "9%", "delta": "-2.1%"}]}</script>
           <script src="./app.js"></script>
         </body>
         </html>
