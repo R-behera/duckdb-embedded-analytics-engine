@@ -1,0 +1,15 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duckdb-embedded-analytics-engine"
+version = "0.1.0"
+description = "Build an embedded analytics engine for portable BI, offline-first dashboards, and analyst workflows that ship with the app."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
